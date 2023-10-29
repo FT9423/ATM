@@ -11,16 +11,12 @@ public class Transaction {
     //Memo for transaction
     private String memo;
 
-    //Account in which transaction was performed
-    private Account inAccount;
-
     //Create new transaction
     //Parameter amount - amount in transaction
     //Parameter inAccount - account transaction belongs to
     public Transaction(double amount, Account inAccount) {
 
         this.amount = amount;
-        this.inAccount = inAccount;
         this.timestamp = new Date();
         this.memo = "";
     }
